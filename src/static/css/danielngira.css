@@ -1,0 +1,67 @@
+.textHeader {
+    /* This styles any headers*/
+      font-family: "Helvetica";
+      color: lightgrey;
+      padding: 10px;
+      font-size: 250%;
+}
+
+.bodyText {
+    /* This styles text that appears in the body*/
+      font-family: "Helvetica";
+      color: lightgrey;
+      padding: 10px;
+      font-size: 125%;
+      display: flex;
+}
+
+.textPosition {
+    position: relative;
+    bottom: 20%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.slides{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    gap: 50%;
+}
+
+.imagePosition{
+    position: center;
+}
+
+.table{
+    /*This styling applies to all apsects of the table*/
+    font-family: "Helvetica";
+    color: lightgrey;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+
+.table th{
+    /* This styles the table headers*/
+    padding: 10px;
+    font-size: 125%;
+    color: black;
+}
+
+.table td{
+    /* This styles the table content*/
+    padding: 10px;
+    font-size: 150%;
+    color: black;
+}
+
+.table tr{
+    /* This styles the table rows*/
+    width: 50%;
+
+}
