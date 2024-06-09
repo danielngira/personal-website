@@ -106,28 +106,28 @@ pip install -r /path/to/requirements.txt
 source /path/to/venv/bin/activate
 ```
 
--Go to the directory where manage.py is located
--Make necessary migrations:
+- Go to the directory where manage.py is located
+- Make necessary migrations:
 
 ```terminal
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 
--Create a superuser:
+- Create a superuser:
 
 ```terminal
 python3 manage.py createsuperuser
 ```
 
--Add necessary information
--Run the server:
+- Add necessary information
+- Run the server:
 
 ```terminal
 python3 manage.py runserver
 ```
 
--Access the website
+- Access the website
 
 ## Progress
 
@@ -140,12 +140,12 @@ I have made the following progress on the frontend of my website:
 
 ## Future Plans
 
--Make projects have pop-up windows that explain what they are in more depth
--Make certificates in resume be clickable
--Make a resume page and projects page with working urls
--Style my table to look good
--Beef up content on my homepage to be more appealing
--Write content for my table
--Get images for my projects
--Write my resume and style it
--Have a scroll bar on website
+- Make projects have pop-up windows that explain what they are in more depth
+- Make certificates in resume be clickable
+- Make a resume page and projects page with working urls
+- Style my table to look good
+- Beef up content on my homepage to be more appealing
+- Write content for my table
+- Get images for my projects
+- Write my resume and style it
+- Have a scroll bar on website
