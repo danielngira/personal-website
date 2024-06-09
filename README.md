@@ -34,7 +34,7 @@ This repository hosts the code for my personal website, a platform to showcase m
 
 ## Project
 
--Fields: name, description, year, link, image
+- Fields: name, description, year, link, image
 The Project model represents individual projects, with fields for the project name, description, year, link, and image.
 
 ## Views
