@@ -23,6 +23,6 @@ class Project(models.Model):
     name = models.TextField()
     description = models.TextField(null=True, blank=True)
     year = models.IntegerField(('year'), choices = YEAR_CHOICES, default = datetime.datetime.now().year)
-    link = models.URLField()
+    link = models.URLField(null=True, blank=True)
     image = models.ImageField(default="static/danielngira/images/placeholderimage.jpg")
-    
+
