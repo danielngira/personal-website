@@ -21,7 +21,8 @@ class User(AbstractUser):
 class Project(models.Model):
     YEAR_CHOICES = [(r, r) for r in range(1984, datetime.date.today().year+1)]
     name = models.TextField()
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
     year = models.IntegerField(('year'), choices = YEAR_CHOICES, default = datetime.datetime.now().year)
     link = models.URLField()
-    image = models.ImageField()
+    image = models.ImageField(default="static/danielngira/images/placeholderimage.jpg")
+    
