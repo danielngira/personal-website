@@ -23,6 +23,7 @@
       <!-- Your stuff: Third-party CSS libraries go here -->
       <!-- This file stores project-specific CSS -->
       <link href="{% static 'css/danielngira.css' %}" rel="stylesheet" />
+      <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
     {% endblock css %}
     <!-- Le javascript
     ================================================== -->
@@ -41,11 +42,34 @@
   </head>
   <style>
     body {
-       background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+        /* There are two background images I can use*/
+       /* background-image: conic-gradient( from 200deg, #c23636, #8B2727, #742020, #5C1A1A);*/
+        background: radial-gradient(circle at center, 
+                    rgba(255, 87, 87, 1) 0%, 
+                    rgba(255, 140, 80, 1) 40%, 
+                    rgba(255, 183, 77, 1) 70%, 
+                    rgba(255, 255, 255, 1) 100%); 
+       font-family: 'Cutive Mono';font-size: 22px;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       height: 100vh;
+       margin: 0;
+       width: 100%;
+       padding: 0;
+       animation: rainbow 10s linear infinite;
+       animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: rainbow;
     }
     .navbar {
         justify-content: flex-start;
-        left: 75%;
+        left: 67%;
     }
     </style>
   <body>
@@ -61,17 +85,17 @@
                   aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'home' %}">Me</a>
+          <a style="color:black;" class="navbar-brand" href="{% url 'home' %}">Me</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Projects</a> 
+                <a style="color:black;" class="nav-link" href="{% url 'home' %}">Projects</a> 
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Resume</a>
+                <a style="color:black;" class="nav-link" href="{% url 'home' %}">Experience</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Contact</a>
+                <a style="color:black;" class="nav-link" href="{% url 'home' %}">Hobbies</a>
                 </li>
                 </ul>
               </li>
